@@ -3,6 +3,8 @@ GraphQL query builder designed to allow you to break away from options like Apol
 
 TODO - I'd like to change the builder style to use infix functions to make it more readable, breaking away from standard builder notation.
 
+I'd also like to add a notation processor so it can look at objects and build graphQL queries based on that. But hey, this is a first release so :) 
+
 An example of how this would be used:
 
 ```kotlin
