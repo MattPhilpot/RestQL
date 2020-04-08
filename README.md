@@ -1,6 +1,8 @@
 # RestQL
 GraphQL query builder designed to allow you to break away from options like Apollo and instead use a regular OkHttp/Retrofit configuration with GraphQL endpoints
 
+TODO - I'd like to change the builder style to use infix functions to make it more readable, breaking away from standard builder notation.
+
 An example of how this would be used:
 
 ```kotlin
@@ -14,7 +16,7 @@ private fun buildGraphQLQuery(queryId: String): CourseService.QueryDTO {
         .withField("id")
         .withField("title")
         .withObject("metadata") { metadata ->
-          metadata.withField("metadataId") //embeded objects use lambda expressions to fill out
+          metadata.withField("metadataId") //embedded objects use lambda expressions to fill out
             .withField("metadataTitle")
             .withField("updated")
         }
